@@ -1,6 +1,6 @@
 import React from 'react';
 
-function invoiceavatar({ avatar, name, id }) {
+function Invoiceavatar({ avatar, name, id }) {
   return (
     <div className="inline-flex items-center mt-6">
       <div className="rounded-full mr-6  p-3 text-white bg-cyan-400 pulseanimation">
@@ -14,4 +14,4 @@ function invoiceavatar({ avatar, name, id }) {
   );
 }
 
-export default invoiceavatar;
+export default Invoiceavatar;

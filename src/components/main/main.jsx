@@ -1,19 +1,21 @@
 import React from 'react';
 import Countingrow from './countingrow';
 import Recentinvoices from './invoicetable/recentinvoices';
-// import {BiSearch} from 'react-icons/bi'
+import Search from '../../icons/search';
 
 function Main() {
   return (
-    <div className="flex-6 ml-4 md:mr-20">
+    <div className="flex-7 ml-4 md:mr-20">
       <div className="flex sm:justify-between justify-around flex-wrap mb-16">
         <div className="font-extrabold text-3xl text-gray-700 ">Dashboard</div>
-        <div className="md:mt-2">
+        <div className="md:mt-2 flex items-center text-gray-400 pl-4 h-12 relative">
+          <Search className="w-5 h-5 fill-current absolute left-7 top-3.5 bottom-0" />
           <input
-            className="rounded-full border text-gray-400 focus:outline-none border-gray-300 mr-4 p-3"
+            className="focus:outline-none border-gray-300 pl-10 focus:ring focus:ring-violet-300 p-3 border rounded-full"
             type="search"
             name="search"
-            placeholder="      Search anything here"
+            title="Search Bar"
+            placeholder="Search anything here"
           />
         </div>
       </div>

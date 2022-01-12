@@ -1,39 +1,40 @@
 import React from 'react';
 import Countingrowcomp from './countingrowcomp';
-import { MdSpaceDashboard } from 'react-icons/md';
-import { FaListAlt } from 'react-icons/fa';
-import { IoMdListBox } from 'react-icons/io';
-import { IoMdDownload } from 'react-icons/io';
+import Dashboard1 from '../../icons/dashboard1';
+import Note from '../../icons/note';
+import List from '../../icons/list';
+import Download from '../../icons/download';
 
-function countingrow() {
+function Countingrow() {
   return (
     <div className="flex flex-1 flex-wrap mb-10">
       <Countingrowcomp
-        icon={<MdSpaceDashboard />}
+        icon={<Dashboard1 className="w-5 h-5 fill-current" />}
         countingtext="Paid"
         count="64"
-        classes="rounded-2xl mr-4 bg-violet-700 p-3 text-white "
+        classes="rounded-2xl mr-4 bg-violet-700 p-3 text-white shadow-2xl "
       />
       <Countingrowcomp
-        icon={<FaListAlt />}
+        icon={<Note className="w-5 h-5 fill-current" />}
         countingtext="Unpaid"
         count="49"
-        classes="rounded-2xl mr-4  p-3 text-white bg-cyan-400 "
+        classes="rounded-2xl mr-4  p-3 text-white bg-cyan-400 shadow-2xl  "
+        classes2="text-amber-500 "
       />
       <Countingrowcomp
-        icon={<IoMdListBox />}
+        icon={<List className="w-5 h-5 fill-current" />}
         countingtext="Overdue"
         count="32"
-        classes="rounded-2xl mr-4 p-3 text-white bg-amber-500 "
+        classes="rounded-2xl mr-4 p-3 text-white bg-amber-500  shadow-2xl "
       />
       <Countingrowcomp
-        icon={<IoMdDownload />}
+        icon={<Download className="w-5  h-5 fill-current" />}
         countingtext="Draft"
         count="16"
-        classes="rounded-2xl mr-4 p-3 text-white bg-gray-300 "
+        classes="rounded-2xl mr-4 p-3 text-white bg-gray-300  shadow-2xl "
       />
     </div>
   );
 }
 
-export default countingrow;
+export default Countingrow;

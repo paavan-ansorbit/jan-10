@@ -1,7 +1,7 @@
 import React from 'react';
 import Listdata from './listdata';
 
-function invoicelist() {
+function Invoicelist() {
   return (
     <table className="table-auto text-xs w-full">
       <thead>
@@ -18,4 +18,4 @@ function invoicelist() {
   );
 }
 
-export default invoicelist;
+export default Invoicelist;

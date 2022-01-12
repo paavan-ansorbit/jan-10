@@ -2,7 +2,7 @@ import React from 'react';
 import Invoiceavatar from './invoiceavatar';
 import moment from 'moment';
 
-function invoicelistsingle({
+function Invoicelistsingle({
   avatar,
   clientname,
   clientid,
@@ -26,9 +26,13 @@ function invoicelistsingle({
       <td>
         <div className={statusclasses}>{status}</div>
       </td>
-      <td>...</td>
+      <td>
+        <button title="more">
+          . . .
+        </button>
+      </td>
     </tr>
   );
 }
 
-export default invoicelistsingle;
+export default Invoicelistsingle;
